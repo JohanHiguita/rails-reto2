@@ -1,24 +1,18 @@
-# README
+# Tu misión en este reto es crear tu primer modelo en Rails.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Instrucciones
+1. Crea una aplicación de Rails.
 
-Things you may want to cover:
+2. Crea un modelo llamado Movie con los siguientes atributos (decide el tipo de datos para cada uno):
 
-* Ruby version
+name
+duration
+year
+rating (G, PG, PG-13, R, NC-17)
+description
+image_url
+3. Prueba el modelo desde la consola de Rails:
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+$ rails console
+> m1 = Movie.create(name: "Avengers: Age of Ultron", duration: 141, ...)
+> Movie.all
